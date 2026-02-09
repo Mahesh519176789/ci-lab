@@ -1,0 +1,22 @@
+<p id="demo4">Click the button to change color</p>
+
+<button onclick="toggleColor()">Toggle Color</button>
+
+<style>
+  .red {
+    color: red;
+  }
+
+  .blue {
+    color: blue;
+  }
+</style>
+
+<script>
+  let para = document.getElementById("demo4");
+
+  function toggleColor() {
+    para.classList.toggle("red");
+    para.classList.toggle("blue");
+  }
+</script>

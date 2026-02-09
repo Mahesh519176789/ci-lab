@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calc-box">
+        <div class="screen" id="screen">0</div>
+
+        <div class="keypad">
+            <button onclick="resetCalc()">AC</button>
+            <button onclick="removeDigit()">DEL</button>
+            <button onclick="setOperator('/')">÷</button>
+            <button onclick="setOperator('*')">×</button>
+
+            <button onclick="addDigit('7')">7</button>
+            <button onclick="addDigit('8')">8</button>
+            <button onclick="addDigit('9')">9</button>
+            <button onclick="setOperator('-')">−</button>
+
+            <button onclick="addDigit('4')">4</button>
+            <button onclick="addDigit('5')">5</button>
+            <button onclick="addDigit('6')">6</button>
+            <button onclick="setOperator('+')">+</button>
+
+            <button onclick="addDigit('1')">1</button>
+            <button onclick="addDigit('2')">2</button>
+            <button onclick="addDigit('3')">3</button>
+            <button onclick="getResult()">=</button>
+
+            <button onclick="addDigit('0')" class="zero">0</button>
+            <button onclick="addDigit('.')">.</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
